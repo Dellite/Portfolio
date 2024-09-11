@@ -1,0 +1,378 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* scrollbar-width: none; */
+}
+
+.logo {
+    font-size: 1.2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+#desktop-nav {
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+nav, .nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+nav {
+    margin: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links li {
+    padding: 1rem;
+}
+
+.nav-links li:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------------ */
+
+.portfolio-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 100vh;
+    scrollbar-width: none;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+#about {
+    background-color: rgb(255, 255, 255);
+}
+
+#projects {
+    background-color: rgb(255, 255, 255);
+}
+
+#contact {
+    background-color: rgb(218, 218, 218);
+}
+
+#home-profile {
+    height: 100vh;
+    gap: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------------------------ */
+
+.left-space {
+    flex: 1;
+}
+
+.right-space {
+    flex: 1;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.profile-text-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.home-name h1 {
+    font-size: 3rem;
+}
+
+.home-greetings p {
+    color: rgb(145, 145, 145);
+}
+
+.accounts-icon {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    padding-top: 20px;
+    transform: translateX(-3px);
+}
+
+.accounts-icon li i {
+    font-size: 40px;
+}
+
+
+.tech-stack {
+    display: flex;
+}
+
+.tech-stack-text p {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.tech-stack-text p::after {
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: black;
+    display: block;
+    margin: 0 20px;
+}
+
+.tech-stack i {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.blob-profile img {
+    object-fit: contain;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+
+/* ------------------------------------------------------ */
+
+
+
+.about {
+    display: flex;
+    background-color: rgb(255, a255, 255);
+    gap: 2rem;
+    padding: 10px;
+}
+
+.about-content {
+    position: relative;
+    height: 100%;
+    max-height: 466.6px;
+    max-width: 480px;
+    display: grid;
+    grid-template-rows: 25px 90px 1fr 1fr;
+}
+
+.about-me p {
+    font-weight: bold;
+    color: rgb(54, 82, 173);
+}
+
+
+.about-img img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.about-intro p {
+    text-align: justify;
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+}
+
+.more-about {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.more-about button {
+    display: flex;
+    padding: 10px 15px;
+    color: rgb(83, 83, 83);
+    font-size: 15px;
+    font-weight: 600;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-radius: 50px;
+    background-color: white;
+    gap: 10px;
+    
+}
+
+.more-about button:hover {
+    opacity: .7;
+    background-color:  rgb(240, 240, 240);
+}
+
+.more-about button:active {
+    opacity: .7;
+    background-color:  rgb(216, 216, 216);
+}
+
+/* ------------------------------------------------------ */
+
+
+.projects-text {
+    margin: 0 0 2rem 0;
+}
+
+.portfolio {
+    font-weight: bold;
+    color: rgb(54, 82, 173);
+}
+
+.project1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.project1-img img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.project1-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.code-demo {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.code-demo i {
+    font-size: 25px;
+    padding: 0 0 0 5px;
+}
+
+.code-demo p {
+    display: flex;
+    align-items: center;
+}
+
+
+.code-demo li {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.code-demo li:hover {
+    background-color: rgb(214, 214, 214);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+/* ------------------------------------------------------ */
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70vh;
+    max-width: 85vw;
+    padding: 10px;
+}
+
+
+.contact-upper-content {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.interested {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.interested h1 {
+    font-size: 42px;
+}
+
+.interested p {
+    font-size: 16px;
+}
+
+.my-contacts {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.email, .phone-number, .address {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-size: 18px;
+} 
+
+.email i, .phone-number i, .address i {
+    background-color: rgb(240, 240, 240);
+    padding: 3px 4px 3px 3px;
+    border-radius: 5px;
+    font-size: 28px;
+}
